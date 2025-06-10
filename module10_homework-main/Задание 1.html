@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кнопка с SVG иконкой (Bootstrap Icons)</title>
+    <style>
+        .icon-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            margin-right: 5px;
+            fill: currentColor;
+            transition: fill 0.3s ease;
+        }
+
+        .icon.active {
+        }
+    </style>
+</head>
+<body>
+
+<button class="icon-button" id="myButton">
+    <svg class="icon" id="myIcon" viewBox="0 0 16 16" fill="currentColor">
+        <path id="iconPath" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-5.904-2.854a.5.5 0 1 1 .707.708L6.707 9.95h2.768a.5.5 0 1 1 0 1H5.5a.5.5 0 0 1-.5-.5V6.475a.5.5 0 1 1 1 0v2.768z"/>
+    </svg>
+    <span>Нажми меня</span>
+</button>
+
+<script>
+    const button = document.getElementById('myButton');
+    const icon = document.getElementById('myIcon');
+    const iconPath = document.getElementById('iconPath');
+
+    let isActive = false;
+
+    button.addEventListener('click', () => {
+        if (isActive) {
+            iconPath.setAttribute("d", "M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-5.904-2.854a.5.5 0 1 1 .707.708L6.707 9.95h2.768a.5.5 0 1 1 0 1H5.5a.5.5 0 0 1-.5-.5V6.475a.5.5 0 1 1 1 0v2.768z"); //Correctly displaying icon_01
+            icon.classList.remove("active");
+        } else {
+            iconPath.setAttribute("d", "M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-5.904-2.803a.5.5 0 1 1 .707.707L6.707 10h2.768a.5.5 0 0 1 0 1H5.5a.5.5 0 0 1-.5-.5V6.525a.5.5 0 0 1 1 0v2.768z"); 
+            icon.classList.add("active");
+        }
+
+        isActive = !isActive;
+    });
+</script>
+
+</body>
+</html>

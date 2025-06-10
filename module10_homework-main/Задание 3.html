@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <style>
+        #chat-log {
+            height: 200px;
+            overflow-y: scroll;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<div id="chat-log"></div>
+<input type="text" id="message-input">
+<button id="send-button">Отправить</button>
+<button id="geo-button">Гео-локация</button>
+
+<script>
+    const chatLog = document.getElementById('chat-log');
+    const messageInput = document.getElementById('message-input');
+    const sendButton = document.getElementById('send-button');
+    const geoButton = document.getElementById('geo-button');
+
+    const ws = new WebSocket('wss://echo-ws-service.herokuapp.com');
+
+    ws.onmessage = (event) => {
+        chatLog.innerHTML += `<p>Received: ${event.data}</p>`;
+    };
+
+    sendButton.addEventListener('click', () => {
+        const message = messageInput.value;
+        ws.send(message);
+        chatLog.innerHTML += `<p>Sent: ${message}</p>`;
+        messageInput.value = '';
+    });
+
+    geoButton.addEventListener('click', () => {
+        navigator.geolocation.getCurrentPosition((position) => {
+            const link = `https://www.openstreetmap.org/#map=18/${position.coords.latitude}/${position.coords.longitude}`;
+            chatLog.innerHTML += `<p><a href="${link}" target="_blank">My location</a></p>`;
+            ws.send(`[GEO] ${position.coords.latitude}, ${position.coords.longitude}`);
+        });
+    });
+</script>
+
+</body>
+</html>

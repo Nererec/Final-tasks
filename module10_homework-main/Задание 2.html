@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кнопка</title>
+    <style>
+        .screen-size-button {
+            background-color: #008CBA;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<button class="screen-size-button" id="screenSizeButton">Показать размеры экрана</button>
+
+<script>
+    const button = document.getElementById('screenSizeButton');
+
+    button.addEventListener('click', () => {
+        const screenWidth = window.screen.width;
+        const screenHeight = window.screen.height;
+
+        alert(`Размеры экрана:\nШирина: ${screenWidth}px\nВысота: ${screenHeight}px`);
+    });
+</script>
+
+</body>
+</html>
