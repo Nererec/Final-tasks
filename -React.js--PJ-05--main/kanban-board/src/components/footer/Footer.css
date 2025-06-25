@@ -1,0 +1,23 @@
+.footer {
+  min-height: 50px;
+  background: #0067a3;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+  width: 100%;
+}
+
+.counts {
+  display: flex;
+}
+
+.count {
+  position: relative;
+  margin-right: 30px;
+}
+
+.copy {
+  margin-left: auto;
+}

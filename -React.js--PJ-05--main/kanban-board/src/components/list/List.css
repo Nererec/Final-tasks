@@ -1,0 +1,78 @@
+.list {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  width: 280px;
+  height: 100%;
+  background: #ebecf0;
+  padding: 12px 20px 0px 20px;
+  border-radius: 8px;
+  margin: 24px;
+  box-shadow: 2px 2px 8px rgb(0 0 0 / 20%);
+}
+.listItem {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 15px;
+}
+.listdel {
+  cursor: pointer;
+  margin-left: 130px;
+}
+
+.listForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.listTitle {
+  margin: 0;
+}
+
+.task {
+  width: 100%;
+  background: #fff;
+  color: #000;
+  margin-bottom: 17px;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.task:hover {
+  text-decoration: underline;
+}
+
+.taskLink {
+  text-decoration: none;
+  width: 100%;
+}
+
+.addButton {
+  background: none;
+  border: none;
+  appearance: none;
+  font-size: 15px;
+  color: #737373;
+  margin-top: auto;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.add {
+  background: none;
+  border: none;
+  appearance: none;
+  font-size: 15px;
+  color: #737373;
+  margin-top: auto;
+  margin-bottom: 8px;
+}
+
+.addButton:hover {
+  color: #000;
+}
+.select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+}

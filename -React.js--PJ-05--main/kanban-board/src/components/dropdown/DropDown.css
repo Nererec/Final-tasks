@@ -1,0 +1,35 @@
+.arrow {
+  width: 100%;
+  position: relative;
+}
+
+.dropdown {
+  width: 100%;
+  background: #fff;
+  color: #000;
+  margin-bottom: 7px;
+  padding: 8px;
+  border-radius: 8px;
+  position: relative;
+  text-align: end;
+}
+.dropdown-title {
+  width: 100%;
+  position: absolute;
+  background: #fff;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  border-radius: 8px;
+}
+.title:hover {
+  cursor: pointer;
+  background: #dedede;
+}
+.title {
+  padding: 8px;
+  margin: 0;
+}
+.disabled {
+  pointer-events: none;
+}
