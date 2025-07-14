@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+
+@media (min-width: 430px) and (max-width: 768px) {
+    .layout {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 768px;
+    }
+}
+
+@media (max-width: 429px) {
+    .layout {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 430px;
+    }
+}

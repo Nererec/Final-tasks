@@ -1,0 +1,47 @@
+.footer {
+    margin-top: 74px;
+    margin-left: 598px;
+    width: 727px;
+    height: 62px;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+.button {
+    width: 727px;
+    height: 62px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #F7F9F7;
+    cursor: pointer;
+    background-color: #4E148C;
+    border-radius: 10px;
+}
+
+@media (min-width: 430px) and (max-width: 768px) {
+    .footer {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 429px) {
+    .footer {
+        margin-top: 54px;
+        margin-left: 0px;
+        width: 400px;
+        height: 62px;
+        border-radius: 10px;
+        border: 1px solid;
+    }
+    
+    .button {
+        width: 400px;
+        height: 72px;
+        font-weight: 700;
+        font-size: 26px;
+        color: #F7F9F7;
+        cursor: pointer;
+        background-color: #4E148C;
+        border-radius: 10px;
+    }
+}

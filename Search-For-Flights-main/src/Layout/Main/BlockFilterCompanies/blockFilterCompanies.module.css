@@ -1,0 +1,128 @@
+.BlockFilterCompanies {
+    margin-top: 47px;
+    width: 272px;
+    height: 198px;
+    border-radius: 10px;
+    background-color: #E8EBF2;
+}
+
+.titleFilter {
+    padding: 12px 0px 0px 19px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #4E148C;
+}
+
+.positionRadiobutton {
+    display: flex;
+    flex-direction: column;
+}
+
+.custom_radio {
+    margin: 10px 0px 0px 43px;
+}
+
+.custom_radio > input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.custom_radio > span {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #858AE3;
+}
+
+.custom_radio > span::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #4E148C;
+    border-radius: 50%;
+    margin-right: 18px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.custom_radio > input:checked + span::before {
+    border-color: #4E148C;
+    background-color:  white;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%234E148C'/%3e%3c/svg%3e");
+}
+
+@media (min-width: 430px) and (max-width: 768px) {
+    .BlockFilterCompanies {
+        margin-top: 0px;
+        width: 200px;
+        height: 223px;
+        background-color: #4E148C;;
+        border-radius: 0px 0px 0px 10px;
+    }
+
+    .custom_radio {
+        margin: 10px 0px 0px 23px;
+  }
+
+    .titleFilter {
+        padding: 12px 0px 0px 23px;
+        margin: 0px;
+        color: white;
+    }
+
+    .custom_radio > span {
+        color: white;
+    }
+
+    .custom_radio > span::before {
+        border: 1px solid white;
+    }
+
+    .custom_radio > input:checked + span::before {
+        border-color: white;
+        background-color:  #4E148C;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='white'/%3e%3c/svg%3e");
+    }
+}  
+
+@media (max-width: 429px) {
+    .BlockFilterCompanies {
+      margin-top: 0px;
+      width: 200px;
+      height: 223px;
+      background-color: #4E148C;;
+      border-radius: 0px 0px 0px 10px;
+} 
+
+.custom_radio {
+    margin: 10px 0px 0px 20px;
+}
+
+.titleFilter {
+    padding: 12px 0px 0px 20px;
+    margin: 0px;
+    color: white;
+}
+
+.custom_radio > span {
+    color: white;
+}
+
+.custom_radio > span::before {
+    border: 1px solid white;
+}
+
+.custom_radio > input:checked + span::before {
+    border-color: white;
+    background-color:  #4E148C;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='white'/%3e%3c/svg%3e");
+}
+}

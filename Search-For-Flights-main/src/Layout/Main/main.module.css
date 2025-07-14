@@ -1,0 +1,185 @@
+.block_main {
+    display: flex;
+    margin-top: 20.55px;
+    margin-left: 276px;
+    width: 1049px;
+    max-height: 2700px;
+    border-radius: 10px;
+}
+
+.block_filters {
+    width: 272px;
+    height: 503px;
+}
+
+.block_info {
+    margin-left: 50px;
+    width: 727px;
+    max-height: 2700px;
+    border-radius: 10px;
+}
+
+.block_info__navigation {
+    width: 727px;
+    height: 55px;
+}
+
+.block_info__tickets {
+    display: flex;
+    flex-direction: column;
+    row-gap: 45px;
+    margin-top: 29px;
+    width: 727px;
+    min-height: 616px; 
+    max-height: 2616px;
+    border-radius: 10px;
+}
+
+.menuApearHeader {
+    display: none;
+}
+
+.menuApearFilter {
+    display: none;
+    
+}
+
+@media (min-width: 430px) and (max-width: 768px) {
+
+    .block_filters {
+        display: none;
+    }
+
+    .block_main {
+        margin-left: 0px;
+        width: 727px;
+    }
+
+    .block_info {
+        margin-left: 0px;
+    }
+
+    .menuApearHeader {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        /* margin-bottom: 250px; */
+        width: 727px;
+        height: 38px;
+        background-color: #4E148C;
+        border-radius: 10px;
+    }
+
+    .menuApearHeaderWhithBottom {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        margin-bottom: 250px;
+        width: 727px;
+        height: 38px;
+        background-color: #4E148C;
+        border-radius: 10px;
+    }
+
+    .menuApear_title {
+        padding: 5px 0px 0px 23px;
+        margin: 0px;
+        font-weight: 500;
+        font-size: 16px;
+        color: #F7F9F7;
+    }
+
+    .menuApear_titleAction {
+        padding: 5px 0px 0px 90px;
+        margin: 0px;
+        font-weight: 500;
+        font-size: 16px;
+        color: #F7F9F7;
+    }
+
+    .menuApear_button {
+        margin: 13px 15px 0px 0px;
+        color: white;
+        width: 20px;
+        height: 12px;
+        border: none;
+        background-color: #4E148C;
+        cursor: pointer;
+    }
+
+    .menuApearFilter {
+        display: flex;
+        width: 727px;
+        height: 223px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 429px) {
+
+    .block_filters {
+        display: none;
+    }
+   
+    .menuApearFilter {
+        display: flex;
+        width: 400px;
+        height: 223px;
+    }
+
+    .block_main {
+        margin-left: 0px;
+        width: 400px;
+    }
+
+    .block_info {
+        margin-left: 0px;
+    }
+
+    .block_info__navigation {
+        width: 400px;
+        height: 42px;
+    }
+
+    .block_info__tickets {
+        width: 400px;
+    }
+
+    .menuApearHeader {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        /* margin-bottom: 250px; */
+        width: 400px;
+        height: 38px;
+        background-color: #4E148C;
+        border-radius: 10px;
+    }
+
+    .menuApearHeaderWhithBottom {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        margin-bottom: 250px;
+        width: 400px;
+        height: 38px;
+        background-color: #4d108e;
+        border-radius: 10px;
+    }
+    
+    .menuApear_title {
+        padding: 11px 0px 0px 18px;
+        margin: 0px;
+        font-weight: 500;
+        font-size: 10px;
+        color: #F7F9F7;
+    }
+
+    .menuApear_titleAction {
+       display: none;
+    }
+}

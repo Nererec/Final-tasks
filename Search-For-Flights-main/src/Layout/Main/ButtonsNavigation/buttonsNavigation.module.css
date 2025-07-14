@@ -1,0 +1,58 @@
+.button {
+    width: 242px;
+    height: 55px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #4E148C;
+    border: 1px solid #4E148C;
+    background-color: #E8EBF2;
+    cursor: pointer;
+}
+
+.optimal {
+    border-radius: 0px 10px 10px 0px;
+}
+
+.fast {
+    border-radius: 0px;
+} 
+
+.cheap {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.active {
+    width: 242px;
+    height: 55px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #E8EBF2;
+    border: 1px solid #4E148C;
+    background-color: #4E148C;
+    cursor: pointer;
+}
+
+
+@media (max-width: 429px) {
+    .button {
+        width: 133px;
+        height: 42px;
+        font-weight: 700;
+        font-size: 10px;
+        color: #4E148C;
+        border: 1px solid #4E148C;
+        background-color: #E8EBF2;
+        cursor: pointer;
+    }
+
+    .active {
+        width: 133px;
+        height: 42px;
+        font-weight: 700;
+        font-size: 10px;
+        color: #E8EBF2;
+        border: 1px solid #4E148C;
+        background-color: #4E148C;
+        cursor: pointer;
+    }
+}

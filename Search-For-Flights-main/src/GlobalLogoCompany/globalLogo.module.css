@@ -1,0 +1,23 @@
+.pobeda {
+    width: 160px;
+    height: 51px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('pngCompany/pobeda.png');
+} 
+
+.redwings {
+    width: 183px;
+    height: 51px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('pngCompany/redWings.png');
+} 
+
+.ssevenair {
+    width: 143px;
+    height: 51px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('pngCompany/s7.png');
+}

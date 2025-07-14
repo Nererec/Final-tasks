@@ -1,0 +1,111 @@
+.ticket {
+    width: 727px;
+    height: 174px;
+    border-radius: 10px;
+    background-color: #E8EBF2;
+}
+
+.ticketInfoTop {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 43px 0px 39px;
+    width: 727px;
+    height: 87px;
+}
+
+.ticketInfoPrice {
+    margin-top: 38px;
+    width: 140px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 32px;
+    color: #4E148C;
+}
+
+.ticketInfoCompany {
+    margin-top: 32px;
+    max-width: 183px;
+    min-width: 143px;
+    height: 51px;
+}
+
+.ticketInfoBottom {
+    display: flex;
+    align-items: center;
+    width: 727px;
+    height: 87px;
+}
+
+.ticketInfoTime {
+    margin-left: 39px;
+    width: 120px;
+    height: 48px;
+}
+
+.ticketInfoDurationFlight {
+    margin-left: 145px;
+    width: 120px;
+    height: 48px;
+}
+
+.ticketInfoTransfers {
+    margin-left: 110px;
+    width: 120px;
+    height: 48px;
+}
+
+.infoTextTitle {
+    margin: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #858AE3;
+}
+
+.infoTextData {
+    margin: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #4E148C;
+}
+
+@media (max-width: 429px) {
+    .ticket {
+        width: 400px;
+        height: 174px;
+        border-radius: 10px;
+        background-color: #E8EBF2;
+    }
+
+    .ticketInfoBottom {
+        width: 400px;
+    }
+
+    .ticketInfoTop {
+        width: 400px;
+        padding: 0px 23px 0px 23px;
+    }
+
+    .ticketInfoPrice {
+        margin-top: 28px;
+    }
+
+    .ticketInfoTime {
+        margin-left: 23px;
+    }
+    
+    .infoTextTitle {
+        width: 90px;
+    }
+
+    .infoTextData {
+        width: 120px;
+    }
+
+    .ticketInfoDurationFlight {
+        margin-left: 0px;
+    }
+
+    .ticketInfoTransfers {
+        margin-left: 0px;
+    }
+}

@@ -1,0 +1,112 @@
+.blockFilterTransfer {
+    width: 272px;
+    height: 258px;
+    background-color: #E8EBF2;
+    border-radius: 10px;
+}
+
+.titleFilter {
+    margin: 0px 0px 3px 0px;
+    padding: 12px 0px 0px 19px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #4E148C;
+}
+
+.positionCheckbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    position: relative;
+    margin: 16px 0px 0px 40px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #858AE3;
+    left: 30px;
+}
+
+.checkbox{
+    display: none;
+}
+
+.fake{
+    position: relative;
+    right: 22px;
+    top: 6px;
+    display: inline-flex;
+    width: 15px;
+    height: 15px;
+    background: #E8EBF2;
+    justify-content: center;
+    border: 1px solid #4E148C;
+    border-radius: 4px;
+}
+.fake::before{
+    position: relative;
+    top: -6px;
+    content:"\2714";
+    opacity: 0;
+    transition: .2s;
+    color: purple;
+    cursor: pointer;
+}
+
+.checkbox:checked + .fake::before{
+    opacity: 1;
+}
+
+@media (min-width: 430px) and (max-width: 768px) {
+    .blockFilterTransfer {
+        width: 527px;
+        height: 223px;
+        background-color: #4E148C;
+        border-radius: 0px 0px 10px 0px;
+    } 
+
+    .label {
+        margin: 8px 0px 0px 12px;
+        color: white;
+    }
+
+    .titleFilter {
+        color: white;
+    }
+
+    .fake{
+        background: #4E148C;
+        border: 1px solid white;
+    } 
+
+    .fake::before{
+        color: white;
+    }
+}
+
+@media (max-width: 429px) {
+   .blockFilterTransfer {
+    width: 200px;
+    height: 223px;
+    background-color: #4E148C;
+    border-radius: 0px 0px 10px 0px;
+    } 
+
+    .label {
+        margin: 8px 0px 0px 12px;
+        color: white;
+    }
+
+    .titleFilter {
+        color: white;
+    }
+
+    .fake{
+        background: #4E148C;
+        border: 1px solid white;
+    } 
+
+    .fake::before{
+        color: white;
+    }
+}
