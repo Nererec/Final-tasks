@@ -1,0 +1,28 @@
+﻿@import '../../variables.scss';
+
+.ticket_list {
+  width: 100%;
+  margin-top: 29px;
+}
+
+.button {
+  width: 100%;
+  padding: 16px;
+  font-size: 24px;
+  margin-bottom: 60px;
+}
+
+.loading {
+  font-weight: 700;
+  color: $lavender;
+  font-size: 23px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.no_data {
+  font-weight: 500;
+  color: $lavender;
+  font-size: 23px;
+  margin-bottom: 25px;
+}

@@ -1,0 +1,57 @@
+﻿@import '../../variables.scss';
+
+.ticket {
+  position: relative;
+  width: 100%;
+  background-color: $light-lavender;
+  border-radius: 10px;
+  padding: 38px 39px 25px;
+  color: $purple;
+  margin-bottom: 53px;
+
+  @media screen and (max-width: 500px) {
+    padding-right: 29px;
+    padding-left: 23px;
+  }
+
+  &_image {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+
+    @media screen and (max-width: 500px) {
+      top: 45px;
+      right: 30px;
+      width: 118px;
+    }
+  }
+
+  &_price {
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 25px;
+    display: inline-block;
+  }
+}
+
+.info {
+  display: flex;
+  gap: 160px;
+
+  @media screen and (max-width: 1300px) {
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  &_block {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    font-weight: 500;
+    font-size: 16px;
+
+    &_head {
+      color: $lavender;
+    }
+  }
+}
