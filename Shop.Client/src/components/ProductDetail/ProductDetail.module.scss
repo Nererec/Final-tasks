@@ -1,0 +1,154 @@
+@import '@/assets/styles/variables';
+@import '@/assets/styles/mixins';
+
+.productDetail {
+  @include sectionSettings;
+  gap: 30px;
+
+  > .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  > .mainImg {
+    width: auto;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  > .listImg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 60%;
+    list-style: none;
+
+    > li {
+      > .smallImg {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  > .price {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > .titleSimilar {
+      @include title;
+    }
+
+    > .listSimilar {
+      width: 60%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      list-style: none;
+
+      > li {
+        > .similarProduct {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 5px;
+          text-decoration: none;
+          color: $black;
+          width: 150px;
+          border: 1px solid;
+          box-shadow: 5px 2px 2px $green-light;
+          border-radius: 10px;
+          padding: 10px;
+          cursor: pointer;
+
+          > .price {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  > div {
+    > .titleComments {
+      @include title;
+    }
+
+    > .listComments {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      list-style: none;
+
+      > .commentContainer {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        border: 1px solid;
+        box-shadow: 5px 2px 2px $green-light;
+        border-radius: 10px;
+        padding: 10px;
+
+        > p {
+          > span {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+
+    > .input,
+    .textarea {
+      padding: 10px;
+      width: 60%;
+      border: 1px solid $green;
+      border-radius: 5px;
+
+      &:focus {
+        box-shadow: 0 0 0 1px $green;
+      }
+    }
+
+    > .textarea {
+      min-height: 90px;
+      resize: vertical;
+    }
+
+    > .button {
+      width: 300px;
+      margin-top: 20px;
+      align-self: center;
+      padding: 10px 20px;
+      background-color: $green;
+      border: none;
+      border-radius: 5px;
+      color: $white;
+      transition: all 0.3 ease-in-out;
+
+      &:hover {
+        background-color: $green-dark;
+      }
+    }
+  }
+}

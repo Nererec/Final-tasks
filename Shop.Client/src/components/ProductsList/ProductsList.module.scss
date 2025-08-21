@@ -1,0 +1,50 @@
+@import '@/assets/styles/variables';
+@import '@/assets/styles/mixins';
+
+.productsList {
+  @include sectionSettings;
+  gap: 40px;
+
+  > .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  > .form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    > .input {
+      padding: 10px;
+      border: 1px solid $green;
+      border-radius: 5px;
+
+      &:focus {
+        box-shadow: 0 0 0 1px $green;
+      }
+    }
+
+    > .button {
+      padding: 10px 20px;
+      background-color: $green;
+      border: none;
+      border-radius: 5px;
+      color: $white;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: $green-dark;
+      }
+    }
+  }
+
+  > .list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 42px;
+    list-style: none;
+  }
+}

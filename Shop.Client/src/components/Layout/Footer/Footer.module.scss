@@ -1,0 +1,16 @@
+@import '@/assets/styles/variables';
+
+.footer {
+  background-color: $green;
+
+  > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 55px;
+
+    > p {
+      color: $white;
+    }
+  }
+}

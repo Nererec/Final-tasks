@@ -1,0 +1,16 @@
+<div class="product-image">
+  <div class="image-wrapper">
+    <img src="<%= image.url %>" alt="<%= image.url %>" />
+  </div>
+
+  <div class="remove-mark">
+    <label for="<%= image.id %>">Mark to remove</label>
+    <input type="checkbox" id="<%= image.id %>" value="<%= image.id %>" name="imagesToRemove" />
+  </div>
+
+  <div class="control">
+    <input type="radio" id="<%= `${image.id}_radio` %>" value="<%= image.id %>" name="mainImage"
+    <%=image.main ? "checked" : "" %>>
+    <label for="<%= `${image.id}_radio` %>">main</label>
+  </div>
+</div>

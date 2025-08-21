@@ -1,0 +1,170 @@
+body {
+  background-color: #f1f1f1;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  padding: 20px 40px;
+}
+
+.header {
+  padding: 20px 40px;
+  border-bottom: 1px solid #00b1ffff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  background: url('../img/logo.png');
+  background-size: 100px 100px;
+}
+
+.products-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 40px;
+}
+
+/*
+product item
+*/
+.product-item {
+  display: flex;
+}
+
+.product-item .image {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  border: 1px solid #d0d0d0;
+}
+
+.product-item .image img {
+  max-width: 100%;
+}
+
+.product-item .title {
+  display: block;
+  color: inherit;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.product-item .label {
+  font-weight: 600;
+}
+
+/*
+product search
+*/
+.products-search-form {
+  margin-bottom: 40px;
+}
+
+.products-search {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 10px;
+}
+
+.products-search label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/*
+product edit
+*/
+.product-edit-fields {
+  width: 50%;
+}
+
+.product-edit-fields .field {
+  margin-bottom: 20px;
+}
+
+.product-edit-fields .field input,
+.product-edit-fields .field textarea {
+  width: 100%;
+}
+
+.product-edit-fields .field label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/*
+product comments
+*/
+.product-edit-comments .product-comment {
+  margin-bottom: 20px;
+}
+
+.product-comment {
+  padding: 10px 15px;
+  border-bottom: 1px solid #00b1ffff;
+}
+
+.product-comment .remove-mark {
+  margin-top: 20px;
+  text-align: right;
+}
+
+/*
+product images
+*/
+.product-edit-images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  padding: 10px 15px;
+}
+
+.product-image .image-wrapper {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+.product-image .image-wrapper img {
+  max-width: 100%;
+}
+
+.product-image .control {
+  text-align: center;
+}
+
+.product-image .remove-mark {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.product-edit-footer {
+  margin-top: 60px;
+}
+
+/*
+product similar
+*/
+.product-edit-similar {
+  display: flex;
+  gap: 40px;
+}
+
+.not-similar-selector {
+  width: 50%;
+  min-height: 150px;
+}

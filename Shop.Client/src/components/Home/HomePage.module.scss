@@ -1,0 +1,33 @@
+@import '@/assets/styles/variables';
+@import '@/assets/styles/mixins';
+
+.homePage {
+  @include sectionSettings;
+  gap: 30px;
+
+  > .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  > .text {
+    > .textBold {
+      font-weight: bold;
+    }
+  }
+
+  > .link {
+    padding: 10px 20px;
+    background-color: $green;
+    border: none;
+    border-radius: 5px;
+    color: $white;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $green-dark;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@mixin sectionSettings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+
+@mixin title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}

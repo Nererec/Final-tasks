@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SHOP PROJECT</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css" />
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/roboto" />
+    <link rel="stylesheet" href="/<%= process.env.ADMIN_PATH %>/css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo"></div>
+      <div class="header-controls">
+        <% if (!location.includes("/login")) { %>
+        <a href="<%= `/${process.env.ADMIN_PATH}/new-product` %>">ADD PRODUCT</a>
+        <% } %>
+        <a href="<%= `/${process.env.ADMIN_PATH}/auth/logout` %>">LOGOUT</a>
+      </div>
+    </header>
+    <div class="container"><%- body %></div>
+  </body>
+</html>

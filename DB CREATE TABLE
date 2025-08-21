@@ -1,0 +1,7 @@
+CREATE TABLE similar_products(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    first_product VARCHAR(36) NOT NULL,
+    second_product VARCHAR(36) NOT NULL,
+    FOREIGN KEY (first_product) REFERENCES products(product_id),
+    FOREIGN KEY (second_product) REFERENCES products(product_id)
+);
