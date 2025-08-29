@@ -1,0 +1,34 @@
+.result-header {
+  display: flex;
+  flex-direction: row;
+    text-align: start;
+  }
+  
+  .result-header__title {
+    font-family: 'Ferry', sans-serif;
+    font-size: 40px;
+   
+  }
+  
+  .result-header__subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+  }
+
+  @media (max-width: 720px) {
+    .result-header {
+      display: flex;
+      flex-direction: column;
+    }
+    .result-header__title {
+        font-size: 28px;
+        }
+    .result-header__subtitle {
+        font-size: 18px;
+        }
+    .result-header {
+        margin-bottom: 20px;
+        }
+    }
+  
+  

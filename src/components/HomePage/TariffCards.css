@@ -1,0 +1,160 @@
+.tariffs {
+  width: 100%;
+}
+
+.tariffs__title {
+  font-family: 'Ferry', sans-serif;
+  font-size: 45px;
+  font-weight: 900;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.tariffs__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 38px;
+}
+
+.tariffs__card {
+  flex: 1;
+  max-width: 415px;
+  min-width: 335px;
+  background-color: var(--white-color);
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tariffs__card--current {
+  border: 3px solid var(--highlight-color);
+}
+
+.tariffs__card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  border-radius: 10px 10px 0 0;
+  height: 132px;
+}
+
+.tariffs__card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.tariffs__card-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--black-color);
+  margin: 0;
+}
+
+.tariffs__card-title--white {
+  color: var(--white-color);
+}
+
+.tariffs__card-description {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: #6b6b6b;
+  margin: 10px 0;
+}
+
+.tariffs__card-description--white {
+  color: var(--white-color);
+}
+
+.tafiff__card-content {
+  position: relative;
+  padding: 0 30px 24px 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.tariffs__card-price {
+  font-family: 'Inter', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.tariffs__card-old-price {
+  text-decoration: line-through;
+  margin-left: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.tariffs__card-monthly {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.tariffs__card-include {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.tariffs__card-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 55px 0;
+}
+
+.tariffs__card-benefit {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.tariffs__badge {
+  width: 134px;
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  background-color: var(--highlight-color);
+  color: var(--white-color);
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.tariffs__card-button {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--white-color);
+  background-color: var(--highlight-color);
+  border: none;
+  border-radius: 5px;
+  padding: 18px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tariffs__card--current .tariffs__card-button {
+  background-color: #D2D2D2;
+  color: var(--black-color);
+  cursor: pointer;
+}
+
+@media (max-width: 1340px) {
+  .tariffs__card {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 910px) {
+  .tariffs__card {
+    flex: 1 1 calc(100% - 20px);
+  }
+}

@@ -1,0 +1,28 @@
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-left: 20px;
+  }
+  
+  .checkbox-group__item {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #6b6b6b;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .checkbox-group__item input {
+    width: 16px;
+    height: 16px;
+  }
+  
+  
+  @media (max-width: 720px) {
+    .checkbox-group {
+      display: none;
+    }
+  }
+  

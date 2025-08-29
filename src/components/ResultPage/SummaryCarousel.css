@@ -1,0 +1,80 @@
+.summary-carousel {
+  padding: 0 16px;
+}
+
+.summary-carousel__title {
+  font-family: 'Ferry';
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.summary-carousel__subtitle {
+  font-size: 18px;
+  margin-bottom: 16px;
+  color: #949494;
+}
+
+.summary-carousel__content {
+  display: flex;
+  align-items: stretch;
+  position: relative;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+}
+
+.carousel__arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.carousel__arrow img {
+  width: 24px;
+  height: 24px;
+}
+
+.summary-carousel__header {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex-shrink: 0; 
+  background-color: var(--primary-color);
+  padding: 12px 20px;
+  border-radius: 10px 0 0 10px;
+  
+}
+
+.summary-carousel__header-item {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--white-color);
+}
+
+.summary-carousel__slider {
+  display: flex;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.summary-carousel__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 140px;
+  padding: 12px 0;
+  border: 1px solid #ddd;
+  gap: 30px
+}
+
+.summary-carousel__value {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.summary-carousel__date {
+  font-size: 18px;
+  color: #666;
+}
+

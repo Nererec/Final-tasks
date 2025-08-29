@@ -1,0 +1,17 @@
+.mobile-login-image {
+    display: none; 
+  }
+  
+  .mobile-login-image img {
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+  }
+  
+  @media (max-width: 720px) {
+    .mobile-login-image {
+      display: block;
+      text-align: center;
+    }
+  }
+  

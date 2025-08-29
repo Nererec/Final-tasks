@@ -1,0 +1,34 @@
+.login-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.login-page__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: start;
+  max-width: 1200px;
+  margin: 50px 0;
+  padding: 0 10px;
+}
+
+.login-page__left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 720px) {
+  .login-page__content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .login-page__left {
+    align-items: center;
+  }
+}

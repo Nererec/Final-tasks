@@ -1,0 +1,18 @@
+.login-image {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-image__img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 720px) {
+    .login-image {
+        display: none;
+    }
+}
+  

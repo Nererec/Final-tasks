@@ -1,0 +1,29 @@
+.auth-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+    
+  .auth-header__title {
+    font-family: 'Ferry', sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  
+  @media (max-width: 720px) {
+    .auth-header {
+      flex-direction: column;
+      align-items: center;
+      text-align: start;
+    }
+  
+    
+    .auth-header__title {
+      font-size: 24px;
+    }
+      
+  }
+  
